@@ -1,0 +1,146 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body 
+{
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, rgb(0, 8, 255) ,rgb(6, 188, 255) )
+}
+  
+.todo-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+  
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+  
+.todo-input-container {
+    margin-bottom: 20px;
+}
+  
+#todo-input {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 16px 0px #0dd9d9;
+}
+  
+#add-btn {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #6ab04c;
+    color: white;
+    border: none;
+    margin-top: 2vh;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+#add-btn:hover {
+    background-color: #4baf35;
+}
+  
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+  
+li input[type="text"] {
+    width: 70%;
+    border: none;
+    background: none;
+    padding: 5px;
+    font-size: 1rem;
+}
+  
+li input[type="text"]:focus {
+    outline: none;
+    background-color: #fff;
+}
+
+li button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.edit-btn {
+    background-color: #f39c12;
+    color: white;
+    margin-right: 5px;
+}
+  
+.edit-btn:hover {
+    background-color: #0dd9d9;
+}
+  
+.delete-btn {
+    background-color: #eb4d4b;
+    color: white;
+}
+  
+.delete-btn:hover {
+    background-color: #afbe74;
+}
+
+@media (max-width: 600px) {
+    .todo-container {
+        background-color: #f20e629e;
+        padding: 10px;
+        border-radius: 15px;
+        width: auto;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    #add-btn {
+        padding: 2px 2px;
+        border: none;
+        margin-top: 3vh;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15pxpx;
+    }
+    li {
+        display: flex;
+        justify-content: inherit;
+        align-items: stretch;
+        background-color: #f0f0f0;
+        padding: 5px;
+        border-radius: 3px;
+        margin-bottom: 8px;
+    }
+    li input[type="text"] {
+        width: 80%;
+        border: none;
+        background: none;
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+      
+}
